@@ -78,33 +78,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* User_info */
-
-div.sidebar {
-    position: relative;
-    float: right;
-    top: -5em;
-    width: 25%;
-    padding: 3px;
-    vertical-align: top;
-    background: white;
-}
-
-/* Sign up button */
-
-a.signup_button {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    text-align: center;
-    width: 190px;
-    color: #fff;
-    background: #006400;
-    font-size: 150%;
-    font-weight: bold;
-    padding: 20px;
-}
-
 /* Round corners */
 
 .round {
@@ -125,20 +98,6 @@ footer nav {
     float: none;
 }
 
-table.profile {
-    width: 100%;
-    margin-bottom: 0;
-}
-
-td.main {
-    width: 70%;
-    padding: 1em;
-}
-
-.profile img.gravatar {
-    border: 1px solid #999;
-    margin-bottom: -15px;
-}
 
 div.field, div.actions {
   margin-bottom: 10px;
@@ -183,82 +142,4 @@ div.field, div.actions {
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;
-}
-
-ul.users {
-  margin-top: 1em;
-}
-
-.users li {
-  list-style: none;
-}
-
-h1.userpost {
-    margin-bottom: 0.3em;
-}
-
-table.userposts {
-  margin-top: 1em;
-}
-
-table.userposts tr {
-  height: 70px;
-}
-
-table.userposts tr td.gravatar {
-  border-top: 1px solid #ccc;
-  vertical-align: top;
-  width: 50px;
-}
-
-table.userposts tr td.userpost {
-  border-top: 1px solid #ccc;
-  vertical-align: top;
-  padding-top: 10px;
-}
-
-table.userposts tr td.userpost span.timestamp {
-  display: block;
-  font-size: 85%;
-  color: #666;
-}
-
-div.user_info img {
-  padding-right: 0.1em;
-}
-
-div.user_info a {
-  text-decoration: none;
-}
-
-div.user_info span.user_name {
-  position: absolute;
-}
-
-div.user_info span.userposts {
-  font-size: 80%;
-}
-
-div.user_info span.new_userpost{
-    font-size: 80%;   
-}
-
-form.new_userpost {
-  margin-bottom: 2em;
-}
-
-form.new_userpost textarea {
-  height: 20em;
-  width: 47em;
-  margin-bottom: 0;
-}
-
-form.edit_userpost {
-    margin-bottom: 2em;
-}
-
-form.edit_userpost textarea {
-  height: 20em;
-  width: 47em;
-  margin-bottom: 0;  
 }

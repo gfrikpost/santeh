@@ -7,7 +7,7 @@ Santeh::Application.routes.draw do
 
   resources :contents
   
-  root :to => 'contents#index'
+  root :to => 'pages#home'
   
   match '/home', :to => 'pages#home'
 
