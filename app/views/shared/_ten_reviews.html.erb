@@ -1,0 +1,13 @@
+<table class="reviews">
+
+<% Review.all.each do |review| %>
+  <tr>
+    <td class="review">
+      <span class="name"><%= review.name %></span>:
+      <span class="review"><%= review.review %></span>   
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'New Review', new_review_path %>

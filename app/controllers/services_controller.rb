@@ -1,4 +1,6 @@
 class ServicesController < ApplicationController
+  before_filter :require_login, :only => [:create, :update, :delete, :new, :edit]
+  
   # GET /services
   # GET /services.json
   def index

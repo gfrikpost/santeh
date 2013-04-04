@@ -136,3 +136,16 @@ div.field, div.actions {
     }
 }
 
+table.reviews {
+    margin-top: 1em;
+    
+    tr {
+        height: 30px;
+        
+        td.review {
+           border-top: 1px solid #ccc;
+           vertical-align: top;
+           padding-top: 10px; 
+        }
+    }
+}

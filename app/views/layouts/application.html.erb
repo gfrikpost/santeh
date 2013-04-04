@@ -15,6 +15,7 @@
           <%= content_tag(:div, value, :class => "flash #{key}") %>
         <% end %>
         <%= yield %>
+        <%= render 'shared/ten_reviews' %>
       </section>
       <%= render 'layouts/footer' %>
       <%= debug(params) if Rails.env.development? %>
