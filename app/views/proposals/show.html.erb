@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @proposal.name %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @proposal.phone %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @proposal.address %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @proposal.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_proposal_path(@proposal) %> |
+<%= link_to 'Back', proposals_path %>
