@@ -13,7 +13,7 @@ Santeh::Application.configure do
     domain: "google.com",
     authentication: "plain",
     user_name: "secret",
-    password: "secret,
+    password: "secret",
     enable_starttls_auto: true
   }
 end

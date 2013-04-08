@@ -1,6 +1,6 @@
 <table class="reviews">
 
-<% Review.all.each do |review| %>
+<% Review.last(10).each do |review| %>
   <tr>
     <td class="review">
       <span class="name"><%= review.name %></span>:
@@ -10,4 +10,4 @@
 <% end %>
 </table>
 
-<%= link_to 'New Review', new_review_path %>
+<%= link_to 'New Review', new_review_path %>|<%= link_to 'Show All', reviews_path %>

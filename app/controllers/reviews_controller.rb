@@ -5,7 +5,8 @@ class ReviewsController < ApplicationController
   # GET /reviews.json
   def index
     @reviews = Review.all
-
+    
+    @reviews = Review.paginate page: params[:page], per_page: 20
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @reviews }
