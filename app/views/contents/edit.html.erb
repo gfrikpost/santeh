@@ -1,6 +1,11 @@
+<% provide(:title, "Edit content") %>
 <h1>Editing content</h1>
 
-<%= render 'form' %>
-
-<%= link_to 'Show', @content %> |
-<%= link_to 'Back', contents_path %>
+<div class="row">
+  <div class="span6 offset3">
+    <%= render 'form' %>
+    
+    <%= link_to 'Show', @content %> |
+    <%= link_to 'Back', contents_path %>
+  </div>
+</div>

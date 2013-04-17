@@ -1,15 +1,15 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Alias:</b>
-  <%= @content.alias %>
-</p>
-
-<p>
-  <b>Content:</b>
-  <%= @content.content %>
-</p>
-
-
-<%= link_to 'Edit', edit_content_path(@content) %> |
-<%= link_to 'Back', contents_path %>
+<% provide(:title, @content.alias) %>
+<div class="row">
+    <b>Alias:</b>
+    <%= @content.alias %>
+  </p>
+  
+  <p>
+    <b>Content:</b>
+    <%= @content.content %>
+  </p>
+  
+  
+  <%= link_to 'Edit', edit_content_path(@content) %> |
+  <%= link_to 'Back', contents_path %>
+</div>

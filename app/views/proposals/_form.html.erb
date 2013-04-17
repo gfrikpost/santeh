@@ -1,33 +1,17 @@
 <%= form_for(@proposal) do |f| %>
-  <% if @proposal.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
 
-      <ul>
-      <% @proposal.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  
+  <%= f.label :phone %>
+  <%= f.text_field :phone %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :phone %><br />
-    <%= f.text_field :phone, :pattern => "(d{3,4}) d{2,3}-d{2}-d{2}", :title = "([x]xxx) [x]xx-xx-xx" %>
-  </div>
-  <div class="field">
-    <%= f.label :address %><br />
-    <%= f.text_area :address %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <%= f.label :address %>
+  <%= f.text_area :address, rows: 6 %>
+ 
+  <%= f.label :description %>
+  <%= f.text_area :description, rows: 6 %>
+  
+  <%= f.submit "Create proposal", class: "btn btn-large btn-primary" %>
+
 <% end %>

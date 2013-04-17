@@ -1,19 +1,10 @@
 class ContentsController < ApplicationController
-  before_filter :require_login, :only => [:create, :update, :delete, :new, :edit]
+  before_filter :require_login
   
-  # GET /contents
-  # GET /contents.json
   def index
     @contents = Content.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @contents }
-    end
   end
 
-  # GET /contents/1
-  # GET /contents/1.json
   def show
     @content = Content.find(params[:id])
 
