@@ -14,7 +14,7 @@
   <tr>
     <td><%= service.title %></td>
     <td><%= service.description %></td>
-    <td><%= service.price %></td>
+    <td><%= number_to_currency(service.price) %></td>
     <% if session[:admin] %>
       <td><%= link_to 'Show', service %></td>
       <td><%= link_to 'Edit', edit_service_path(service) %></td>
