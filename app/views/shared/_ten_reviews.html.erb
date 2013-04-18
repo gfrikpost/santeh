@@ -1,13 +1,17 @@
-<table class="reviews">
-
-<% Review.last(10).each do |review| %>
-  <tr>
-    <td class="review">
-      <span class="name"><%= review.name %></span>:
-      <span class="review"><%= review.review %></span>   
-    </td>
-  </tr>
-<% end %>
-</table>
-
-<%= link_to 'New Review', new_review_path %>|<%= link_to 'Show All', reviews_path %>
+<div class="row">
+  <div class="span6">
+    <table class="table">
+    
+    <% Review.last(10).each do |review| %>
+      <tr>
+        <td class="review">
+          <span class="name"><%= review.name %></span>:
+          <span class="review"><%= review.review %></span>   
+        </td>
+      </tr>
+    <% end %>
+    </table>
+    
+    <%= link_to 'New Review', new_review_path %>|<%= link_to 'Show All', reviews_path %>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 <% provide(:title, 'Help') %>
 <h1>Hello World!</h1>
 <p>
-  <%= @content.content %>
+  <%= sanitize @content.content %>
 </p>
