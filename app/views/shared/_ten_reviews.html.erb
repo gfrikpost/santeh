@@ -1,7 +1,7 @@
 <div class="row">
   <div class="span6">
     <table class="table">
-    
+    <td><span><h3>Отзывы:</h3></span></td>
     <% Review.last(10).each do |review| %>
       <tr>
         <td class="review">
@@ -12,6 +12,6 @@
     <% end %>
     </table>
     
-    <%= link_to 'New Review', new_review_path %>|<%= link_to 'Show All', reviews_path %>
+    <%= link_to 'Оставить Отзыв', new_review_path %>|<%= link_to 'Показать Все', reviews_path %>
   </div>
 </div>
