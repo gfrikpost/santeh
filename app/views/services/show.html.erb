@@ -1,20 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
-  <%= @service.title %>
-</p>
+<div class="row">
+  <div class="span6 offset3">
 
-<p>
-  <b>Description:</b>
-  <%= @service.description %>
-</p>
-
-<p>
-  <b>Price:</b>
-  <%= @service.price %>
-</p>
-
-
-<%= link_to 'Edit', edit_service_path(@service) %> |
-<%= link_to 'Back', services_path %>
+    <p>
+      <b>Название:</b>
+      <%= @service.title %>
+    </p>
+    
+    <p>
+      <b>Описание:</b>
+      <%= @service.description %>
+    </p>
+    
+    <p>
+      <b>Цена:</b>
+      <%= @service.price %>
+    </p>
+    
+    
+    <%= link_to 'Edit', edit_service_path(@service), class: "btn btn-large btn-primary" %>
+    
+  </div>
+</div>

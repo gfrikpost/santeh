@@ -1,14 +1,14 @@
 <%= form_for(@service) do |f| %>
 
-    <%= f.label :title %>
+    <%= f.label :title, 'Название' %>
     <%= f.text_field :title %>
 
-    <%= f.label :description %>
+    <%= f.label :description, 'Описание' %>
     <%= f.text_area :description, rows: 6 %>
 
-    <%= f.label :price %>
-    <%= f.text_field :price %>
+    <%= f.label :price, 'Цена' %>
+    <%= f.text_field :price, :class => 'input-mini' %>  Руб.<br/>
 
-    <%= f.submit "Create services", class: "btn btn-large btn-primary" %>
+    <%= f.submit "Добавить Услугу", class: "btn btn-large btn-primary" %>
 
 <% end %>

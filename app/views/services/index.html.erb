@@ -1,10 +1,10 @@
-<h1>Listing services</h1>
+<h1>Услуги</h1>
 
-<table>
+<table class="table table-bordered">
   <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th>Price</th>
+    <th>Услуга</th>
+    <th>Описание</th>
+    <th>Цена</th>
     <th></th>
     <th></th>
     <th></th>
@@ -26,5 +26,5 @@
 
 <br />
   <% if session[:admin] %>
-    <%= link_to 'New Service', new_service_path %>
+    <%= link_to 'Добавить услугу', new_service_path, class: "btn btn-large btn-primary" %>
   <% end %>
